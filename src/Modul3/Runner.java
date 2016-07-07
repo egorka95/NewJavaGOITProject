@@ -23,7 +23,13 @@ public class Runner {
         for (Flower flower : flowers){
             System.out.println(flower);
         }
-        Bouqet bouqet = new Bouqet(flowers);
+       List<Flower>bouqet = new ArrayList<>();
+
+        bouqet.add(rose);
+        bouqet.add(rose);
+        bouqet.add(rose);
+        bouqet.add(tulp);
+        bouqet.add(astra);
 
 
     }
