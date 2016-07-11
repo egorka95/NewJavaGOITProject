@@ -1,4 +1,4 @@
-package Modul3;
+package module3;
 
 
 public enum  Size {

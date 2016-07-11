@@ -1,14 +1,13 @@
-package Modul3;
+package module3;
 
 
 import java.util.List;
 
-public class RoseBush extends Rose {
+public class RoseBush {
 
     private List<Rose> roses;
 
-    public RoseBush(String name, Size size, List<Rose> roses) {
-        super(name, size);
+    public RoseBush(List<Rose> roses) {
         this.roses = roses;
     }
 
