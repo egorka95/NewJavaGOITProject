@@ -8,6 +8,15 @@ public class Bouqet {
 
     private final List<Flower> flowers = new ArrayList<>();
 
+    public double getTotalPrice(){
+        double totalPrice = 0;
+        for (Flower flower : flowers){
+            totalPrice += flower.getPrice();
+        }
+
+        return totalPrice;
+    }
+
     public boolean add(Flower flower){
         return flowers.add(flower);
     }
