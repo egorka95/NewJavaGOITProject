@@ -12,7 +12,6 @@ public class RoseBush {
         public Rose(Color color, Size size, double price) {
             super(color, size, price);
         }
-
     }
 
     private Flower.Color color;
@@ -22,8 +21,6 @@ public class RoseBush {
         this.color = color;
         this.size = size;
     }
-
-
 
     public void birth(){
         if (roses.size() == 0 ){
