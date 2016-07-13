@@ -5,28 +5,26 @@ package module04.Task1;
  */
 public class Circle implements Figure {
 
-
-    private double x;
+    private double radius;
 
     public double getX() {
-        return x;
+        return radius;
     }
 
     public void setX(double x) {
-        this.x = x;
+        this.radius = radius;
     }
 
-    public  Circle(double x)throws IllegalArgumentException{
-        if (x < 0){
+    public  Circle(double radius)throws IllegalArgumentException{
+        if (radius < 0){
             throw new IllegalArgumentException("Вы ввели отрицательно число");
         }else
-        this.x=x;
-
+        this.radius=radius;
 
     }
 
     @Override
     public double area() {
-        return 3.14 * (this.x * this.x);
+        return Math.PI * (this.radius * this.radius);
     }
 }

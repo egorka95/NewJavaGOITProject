@@ -2,35 +2,38 @@ package module04.Task1;
 
 public class Traingle implements Figure {
 
-    private double x;
-    private double y;
+    private double firstSideOfTraingle;
 
-    public double getX() {
-        return x;
+    public double getSecondSideOfTraingle() {
+        return secondSideOfTraingle;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setSecondSideOfTraingle(double secondSideOfTraingle) {
+        this.secondSideOfTraingle = secondSideOfTraingle;
     }
 
-    public double getY() {
-        return y;
+    public double getFirstSideOfTraingle() {
+        return firstSideOfTraingle;
     }
 
-    public void setY(double y) {
-        this.y = y;
+    public void setFirstSideOfTraingle(double firstSideOfTraingle) {
+        this.firstSideOfTraingle = firstSideOfTraingle;
     }
 
-    public Traingle(double x, double y)throws IllegalArgumentException {
-        if (x < 0 || y < 0){
+    private double secondSideOfTraingle;
+
+
+
+    public Traingle(double firstSideOfTraingle, double secondSideOfTraingle)throws IllegalArgumentException {
+        if (firstSideOfTraingle < 0 || secondSideOfTraingle < 0){
             throw new IllegalArgumentException("Вы ввели отрицательное число");
         }else
-        this.x = x;
-        this.y = y;
+        this.firstSideOfTraingle = firstSideOfTraingle;
+        this.secondSideOfTraingle = secondSideOfTraingle;
     }
 
     @Override
     public double area() {
-        return (0.5 * x) * y;
+        return (0.5 * firstSideOfTraingle) * secondSideOfTraingle;
     }
 }

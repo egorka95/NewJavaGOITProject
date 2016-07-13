@@ -9,8 +9,6 @@ public class Temperature {
     public static final double ABSOLUTE_ZERO_IN_FAHRENHEIT = -459.67;
 
 
-
-
     public double CELSIUS(double x) throws TemperatureExсeption {
         double temperature = (x * 1.8) + 32;
 

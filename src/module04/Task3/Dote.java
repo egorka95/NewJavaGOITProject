@@ -5,36 +5,34 @@ package module04.Task3;
  */
 public class Dote {
 
-    private int x;
-    private int y;
+    private int poin1;
+    private int poin2;
 
-    public Dote(int x, int y) {
+    public Dote(int poin1, int poin2) {
 
-        this.x = x;
-        this.y = y;
-
+        this.poin1 = poin1;
+        this.poin2 = poin2;
 
     }
 
-    public int getX() {
-        return x;
+    public int getPoin1() {
+        return poin1;
     }
 
-
-    public void setX(int x) {
-        this.x = x;
+    public void setPoin1(int poin1) {
+        this.poin1 = poin1;
     }
 
-    public int getY() {
-        return y;
+    public int getPoin2() {
+        return poin2;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void setPoin2(int poin2) {
+        this.poin2 = poin2;
     }
 
-    public double calculator( Dote dote2) {
-        return Math.sqrt(Math.pow((this.x - dote2.getX()), 2) + Math.pow((this.y - dote2.getY()), 2));
+    public double calculator(Dote dote2) {
+        return Math.sqrt(Math.pow((this.poin1 - dote2.getPoin1()), 2) + Math.pow((this.poin2 - dote2.getPoin2()), 2));
     }
 
 

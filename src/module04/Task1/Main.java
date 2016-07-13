@@ -6,7 +6,7 @@ package module04.Task1;
 public class Main {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args)throws IllegalStateForFigureException {
 
         /*
 
@@ -14,7 +14,7 @@ public class Main {
 
          */
 
-        Figure rectangle = new Rectangle(3,4);
+        Figure rectangle = new Rectangle(-3,4);
         System.out.println(rectangle.area());
 
         Figure circle = new Circle(4);

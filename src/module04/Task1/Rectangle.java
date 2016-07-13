@@ -7,36 +7,37 @@ package module04.Task1;
 
 
     //дать адекватные названия
-    private double x;
-    private double y;
+    private double side1;
 
-
-    public double getX() {
-        return x;
+    public double getSide2() {
+        return side2;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setSide2(double side2) {
+        this.side2 = side2;
     }
 
-    public double getY() {
-        return y;
+    public double getSide1() {
+        return side1;
     }
 
-    public void setY(double y) {
-        this.y = y;
+    public void setSide1(double side1) {
+        this.side1 = side1;
     }
 
-    public Rectangle(double x, double y) throws IllegalArgumentException {
-        if (x < 0 || y < 0){
-            throw new IllegalArgumentException("Вы ввели отрицательное число");
+    private double side2;
+
+
+    public Rectangle(double side1, double side2) throws IllegalStateForFigureException {
+        if (side1 < 0 || side2 < 0){
+            throw new IllegalStateForFigureException("Вы ввели отрицательное число");
         }else
-        this.x = x;
-        this.y = y;
+        this.side1 = side1;
+        this.side2 = side2;
     }
 
     @Override
     public double area() {
-        return x * y;
+        return side1 * side2;
     }
 }
