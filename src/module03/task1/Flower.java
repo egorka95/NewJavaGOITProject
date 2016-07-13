@@ -1,6 +1,12 @@
 package module03.task1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 abstract class Flower {
+
+    private final List<Flower> flowers = new ArrayList<>();
+
 
     private Color color;
     private Size size;
@@ -8,7 +14,7 @@ abstract class Flower {
 
     public Flower() {
 
-        //тут мы должны установить какие то константы отталкиваясь от нужно нам логики
+        //тут мы должны установить какие то константы отталкиваясь от нужной нам логики
 
     }
 
@@ -34,6 +40,17 @@ abstract class Flower {
 
     }
 
+    public Flower flower(int index){
+        return flowers.get(index);
+    }
+
+    public boolean add(Flower flower){
+        return flowers.add(flower);
+    }
+
+    public Flower remove(int index){
+        return flowers.remove(index);
+    }
 
     public Color getColor() {
         return color;
@@ -56,6 +73,8 @@ abstract class Flower {
     public void setSize(Size size) {
         this.size = size;
     }
+
+
 
     @Override
     public String toString() {
