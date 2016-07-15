@@ -10,9 +10,9 @@ public class Main {
 
          */
 
-        Dote dote1 = new Dote(2, 2);
-        Dote dote2 = new Dote(4, 4);
-        dote1.calculator(dote2);
+        Dot dot1 = new Dot(2, 2);
+        Dot dot2 = new Dot(4, 4);
+        dot1.calculator(dot2);
 
     }
 }

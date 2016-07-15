@@ -1,9 +1,7 @@
 package module04.Task1;
 
-
-
 /**
- * Created by nikitarozhkov on 01.06.16.
+ * Интерфейс Figure в этом интерфейсе реализван принцип полиморфизма для всех классов фигур.
  */
 /*
  * Added by Dmitrij Lenchuk
@@ -15,6 +13,5 @@ package module04.Task1;
 public interface Figure {
 
     double area();
-
 
 }

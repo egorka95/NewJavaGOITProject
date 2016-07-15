@@ -1,13 +1,13 @@
 package module04.Task1;
 
 /**
- * Created by nikitarozhkov on 13.07.16.
+ * Создана специальная ошибка для высчитывания плозади фигур.
  */
 /*
  * Added by Dmitrij Lenchuk
  *
- * 1. Поубирай бессмысленные надписи из javaDoc, типа: "Created by nikitarozhkov on 01.06.16.".
- *    Напиши туда что-то вразумительное о классе.
+ * 1. Поубирай бессмысленные надписи из javaDoc, типа: "Created by nikitarozhkov on 01.06.16.". +++
+ *    Напиши туда что-то вразумительное о классе. +++
  */
 public class IllegalStateForFigureException extends Exception {
 
@@ -18,7 +18,7 @@ public class IllegalStateForFigureException extends Exception {
         return message;
     }
 
-    IllegalStateForFigureException(String message){
+    IllegalStateForFigureException(String message) {
         this.message = message;
     }
 }
