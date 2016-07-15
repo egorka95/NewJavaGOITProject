@@ -20,7 +20,7 @@ public class Circle implements Figure {
     public Circle(double radius) throws IllegalArgumentException {
         if (radius < 0) {
             throw new IllegalArgumentException("Вы ввели отрицательное число " + radius + "Введите пожалуйста коерктные данные");
-        } else
+        }
             this.radius = radius;
 
     }

@@ -25,9 +25,10 @@ public class Triangle implements Figure {
         if (firstSideOfTriangle < 0 || secondSideOfTriangle < 0) {
             throw new IllegalArgumentException("Вы ввели отрицательное число " + firstSideOfTriangle
                     + " или " + secondSideOfTriangle + "Введите пожалуйста коерктные данные");
-        } else
+        }
             this.firstSideOfTriangle = firstSideOfTriangle;
-        this.secondSideOfTriangle = secondSideOfTriangle;
+            this.secondSideOfTriangle = secondSideOfTriangle;
+
     }
 
     private double firstSideOfTriangle;

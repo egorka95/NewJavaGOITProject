@@ -27,7 +27,7 @@ class Rectangle implements Figure {
         if (sideA < 0 || sideB < 0) {
             throw new IllegalStateForFigureException("Вы ввели отрицательное число " + sideA +
                     " или " + sideB + "Введите пожалуйста коерктные данные");
-        } else
+        }
             this.sideA = sideA;
         this.sideB = sideB;
     }

@@ -18,41 +18,39 @@ package module04.Task3;
  */
 public class Dot {
 
-    private int point1;
-    private int point2;
+    private int xValue;
+    private int yValue;
 
-    public Dot(int point1, int point2) {
-
-        this.point1 = point1;
-        this.point2 = point2;
-
+    public Dot(int xValue, int yValue) {
+        this.xValue = xValue;
+        this.yValue = yValue;
     }
 
-    public int getPoint1() {
-        return point1;
+    public int getxValue() {
+        return xValue;
     }
 
-    public void setPoint1(int point1) {
-        this.point1 = point1;
+    public void setxValue(int xValue) {
+        this.xValue = xValue;
     }
 
-    public int getPoint2() {
-        return point2;
+    public int getyValue() {
+        return yValue;
     }
 
-    public void setPoint2(int point2) {
-        this.point2 = point2;
+    public void setyValue(int yValue) {
+        this.yValue = yValue;
     }
 
     public double calculator(Dot dot2) {
-        return Math.sqrt(Math.pow((this.point1 - dot2.getPoint1()), 2) + Math.pow((this.point2 - dot2.getPoint2()), 2));
+        return Math.sqrt(Math.pow((this.xValue - dot2.getxValue()), 2) + Math.pow((this.yValue - dot2.getyValue()), 2));
     }
 
     @Override
     public String toString() {
         return "Dot{" +
-                "point1=" + point1 +
-                ", point2=" + point2 +
+                "point1=" + xValue +
+                ", point2=" + yValue +
                 '}';
     }
 

@@ -27,10 +27,8 @@ public class Temperature {
             throw new TemperatureException("Вы ввели некоректные данные: " + degree
                     + " температрура которую вы ввели ниже " + ABSOLUTE_ZERO_IN_CELSIUS
                     + " а это на минуточку обсолютный ноль");
-        } else {
-            double temperature = (degree * 1.8) + 32;
-            return temperature;
         }
+        return (degree * 1.8) + 32;
     }
 
     public static double fahrenheit(double degree) throws TemperatureException {
@@ -39,9 +37,7 @@ public class Temperature {
             throw new TemperatureException("Вы ввели некоректные данные: " + degree
                     + " температрура которую вы ввели ниже " + ABSOLUTE_ZERO_IN_FAHRENHEIT
                     + " а это на минуточку обсолютный ноль");
-        } else {
-            double temperature = (degree - 32) * 1.8;
-            return temperature;
         }
+        return (degree - 32) * 1.8;
     }
 }

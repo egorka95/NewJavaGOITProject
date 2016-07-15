@@ -19,11 +19,9 @@ public class Main {
 
          */
 
-        Temperature calc = new Temperature();
+        System.out.println(Temperature.celsius(-400));
 
-        System.out.println(calc.celsius(-400));
-
-        System.out.println(calc.fahrenheit(32));
+        System.out.println(Temperature.fahrenheit(32));
     }
 }
 
